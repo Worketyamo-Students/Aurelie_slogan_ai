@@ -7,7 +7,7 @@ L’utilisateur saisit le nom de son entreprise et une brève description de son
 
 ## 🚀 Fonctionnalités
 - Génération IA de slogans adaptés au secteur d’activité.  
-- **Version gratuite** : jusqu’à **5 à 10 slogans/jour**.  
+- **Version gratuite** : jusqu’à **3 slogans/jour**.  
 - **Abonnement Premium 👑** :  
   - Générations illimitées  
   - Sauvegarde des slogans favoris (en cours de développement)  
@@ -31,7 +31,7 @@ The user enters their company name and a brief description of their activity, an
 
 ## 🚀 Features
 - AI-powered slogan generation tailored to the business sector.  
-- **Free version**: up to **5 to 10 slogans/day**.  
+- **Free version**: up to **3 slogans/day**.  
 - **Premium Subscription 👑**:  
   - Unlimited generations  
   - Save favorite slogans (under development)  
