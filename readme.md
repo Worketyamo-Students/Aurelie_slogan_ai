@@ -16,7 +16,7 @@ L’utilisateur saisit le nom de son entreprise et une brève description de son
 ## 📂 Pages principales
 - **Accueil** : Présentation de l’outil et mise en avant des avantages.  
 - **Générateur** : Interface où l’utilisateur entre ses informations et reçoit ses slogans.  
-- **Premium** : Page dédiée à l’abonnement et aux fonctionnalités exclusives.  
+- **Premium** : (⏳ à venir) Page dédiée à l’abonnement et aux fonctionnalités exclusives.  
 - **Favoris** : (⏳ à venir) Page pour gérer et sauvegarder les slogans préférés.  
 
 <br>
@@ -40,6 +40,6 @@ The user enters their company name and a brief description of their activity, an
 ## 📂 Main Pages
 - **Home**: Presentation of the tool and highlights of its benefits.  
 - **Generator**: Interface where the user inputs information and receives slogans.  
-- **Premium**: Page dedicated to subscription and exclusive features.  
+- **Premium**:  (⏳ coming soon) Page dedicated to subscription and exclusive features.  
 - **Favorites**: (⏳ coming soon) Page to manage and save favorite slogans.  
 
