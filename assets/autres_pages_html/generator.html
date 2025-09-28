@@ -23,14 +23,56 @@
       }
     </style>
 </head>
-<body  class="bg-white-background overflow-hidden h-screen w-screen px-0 py-0 border-0 box-border">
+<body  class="bg-white-background overflow-x-hidden h-screen w-screen px-0 py-0 border-0 box-border">
 
-  <header class="h-[5rem] w-full flex items-center mt-[2rem] px-[2rem] lg:px-[5rem]">
+  <header class="h-[5rem] w-full flex items-center justify-between mt-[2rem] px-[2rem] lg:px-[5rem] relative">
     <a href="../../index.html">
       <img class="lg:w-60 lg:h-60" src="../images/logo.svg" alt="logo">
     </a>
+
+    <ul id="menu" class=" hidden md:flex h-[5rem] w-[40rem] list-none flex items-center justify-between text-text text-[1.4rem] lg:text-[2rem] font-main font-bold *:hover:cursor-pointer *:hover:text-primary *:hover:border-b-[0.5rem]">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="generator.html">Generator</a></li>
+      <li><a href="#">Premium</a></li>
+    </ul>
+
+    <div id="hamburgerBtn"  class="block md:hidden cursor-pointer">
+        <img height="30" width="35" src="../images/hamburger.svg" alt="hamburger">
+    </div>
   </header>
 
-    
+  <section class="min-h-screen w-full bg-blue-background mt-[4rem] flex flex-col items-center pb-[2rem]">
+    <form class="h-[52rem] bg-white-background lg:h-[66rem] w-[34rem] lg:w-[65rem] flex flex-col items-center justify-center gap-y-[3rem] rounded-lg  mt-[2rem] lg:mt-[3rem]">
+        <div class="flex flex-col h-[22rem] lg:h-[30rem] w-[34rem] lg:w-[50rem] items-center justify-between">
+            <h1  class="text-[1.8rem] lg:text-[3rem] text-text text-center font-main font-bold ">Generate  your slogan</h1>
+            <textarea class=" pl-[1rem] w-[30rem] lg:w-[50rem] text-text text-[1.4rem] lg:text-[1.8rem] font-secondary font-semibold rounded-sm border-[0.1rem] border-bord-gray" id="message" name="message" rows="6" placeholder="Please enter  your business name and a short description.."></textarea>
+            <button  class=" flex justify-center items-center lg:h-[5rem] lg:w-[30rem] h-[4rem] w-[18rem] text-white-background text-[1.8rem] rounded-xl font-bold font-main bg-gray-background cursor-pointer">Generate</button>
+
+        </div>
+
+        <div class=" border-bord-blue border-[0.1rem] h-[20rem] lg:h-[26rem] w-[30rem] lg:w-[50rem]">
+
+        </div>        
+    </form>
+
+    <div class="mt-[3rem]">
+        <button  class=" flex justify-center items-center lg:h-[5rem] lg:w-[30rem] h-[4rem] w-[18rem] text-white-background text-[1.8rem] rounded-xl font-bold font-main bg-yellow cursor-pointer transform transition-transform duration-300 ease-in-out hover:scale-110">Premium</button>
+    </div>
+  </section>
+
+    <script>
+        const btn = document.getElementById("hamburgerBtn");
+        const menu = document.getElementById("menu");
+        btn.addEventListener("click", () => {
+      
+        if (menu.classList.contains("hidden")) {
+            menu.classList.remove("hidden");
+            menu.classList.add("absolute", "top-full", "justify-center","items-center","gap-y-[2rem]","shadow-lg","rounded-lg", "h-[18rem]", "right-0", "w-[50%]", "bg-white-background", "flex-col", "font-regular");
+        } else {
+            menu.classList.add("hidden");
+            menu.classList.remove("absolute", "top-full", "justify-center","items-center","gap-y-[2rem]","shadow-lg","rounded-lg","h-[18rem]", "right-0", "w-[50%]", "bg-white-background", "flex-col","font-regular");
+        }
+        });
+    </script>
 </body>
 </html>
