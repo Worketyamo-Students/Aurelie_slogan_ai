@@ -26,15 +26,17 @@
 </head>
 <body  class="bg-white-background overflow-x-hidden h-screen w-screen px-0 py-0 border-0 box-border">
 
-  <header class="h-[5rem] w-full flex items-center justify-between mt-[2rem] px-[2rem] lg:px-[5rem] relative">
+  <header class="bg-pink-400 h-[5rem] w-full flex items-center justify-between mt-[2rem] px-[2rem] lg:px-[5rem] relative">
     <a href="../../index.html">
       <img class="lg:w-60 lg:h-60" src="../images/logo.svg" alt="logo">
     </a>
 
-    <ul id="menu" class=" hidden md:flex h-[5rem] w-[40rem] list-none flex items-center justify-between text-text text-[1.4rem] lg:text-[2rem] font-main font-bold *:hover:cursor-pointer *:hover:text-primary *:hover:border-b-[0.5rem]">
+    <ul id="menu" class="bg-red-400 hidden md:flex h-[5rem] w-[50rem] list-none flex items-center justify-between text-text text-[1.4rem] lg:text-[2rem] font-main font-bold *:hover:cursor-pointer *:hover:text-primary *:hover:border-b-[0.5rem]">
       <li><a href="../../index.html">Home</a></li>
       <li><a href="generator.html">Generator</a></li>
       <li><a href="#">Premium</a></li>
+      <li><a href="#">Favorites</a></li>
+
     </ul>
 
     <div id="hamburgerBtn"  class="block md:hidden cursor-pointer">
@@ -68,10 +70,10 @@
       
         if (menu.classList.contains("hidden")) {
             menu.classList.remove("hidden");
-            menu.classList.add("absolute", "top-full", "justify-center","items-center","gap-y-[2rem]","shadow-lg","rounded-lg", "h-[18rem]", "right-0", "w-[50%]", "bg-white-background", "flex-col", "font-regular");
+            menu.classList.add("absolute", "top-full", "justify-center","items-center","gap-y-[2rem]","shadow-lg","rounded-lg", "h-[18rem]", "right-0", "w-[52%]", "bg-white-background", "flex-col", "font-regular");
         } else {
             menu.classList.add("hidden");
-            menu.classList.remove("absolute", "top-full", "justify-center","items-center","gap-y-[2rem]","shadow-lg","rounded-lg","h-[18rem]", "right-0", "w-[50%]", "bg-white-background", "flex-col","font-regular");
+            menu.classList.remove("absolute", "top-full", "justify-center","items-center","gap-y-[2rem]","shadow-lg","rounded-lg","h-[18rem]", "right-0", "w-[52%]", "bg-white-background", "flex-col","font-regular");
         }
         });
     </script>
