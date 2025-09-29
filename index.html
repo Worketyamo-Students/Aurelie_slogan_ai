@@ -21,7 +21,7 @@
       }
     </style>
 </head>
-<body  class="bg-white-background overflow-hidden h-screen w-screen px-0 py-0 border-0 box-border fixed">
+<body  class="bg-white-background overflow-hidden h-screen w-screen px-0 py-0 border-0 box-border">
 
   <header class="h-[5rem] w-full flex items-center mt-[2rem] px-[2rem] lg:px-[5rem]">
     <a href="index.html">
@@ -53,6 +53,27 @@
   <footer class="bg-footer h-[6rem] w-full flex items-center justify-center mt-[1rem] lg:mt-[4rem] rounded-t-lg">
     <img src="assets/images/logo.svg" alt="logo">
   </footer>
+
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Bloque le scroll initial
+  document.body.style.overflow = 'hidden';
+  
+  // Réinitialise après rotation
+  window.addEventListener('orientationchange', function() {
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+      document.body.style.overflow = 'hidden';
+    }, 100);
+  });
+  
+  // Empêche le scroll tactile
+  document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+});
+</script>
     
 </body>
 </html>
